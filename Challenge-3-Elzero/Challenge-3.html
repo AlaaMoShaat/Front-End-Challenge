@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge-3</title>
+</head>
+
+<body>
+    <p data-person="Osama">This Is Very Very Long Comment Number One</p>
+    <p data-person="Ahmed">This Is Very Very Long Comment Number Two</p>
+    <p data-person="Sayed">This Is Very Very Long Comment Number Three</p>
+    <style>
+        p {
+            background-color: #eee;
+            padding: 10px;
+            margin: 20px auto;
+            line-height: 20px;
+            width: 450px;
+            border-left: 4px solid fuchsia;
+            position: relative;
+        }
+
+        p::after {
+            content: "";
+            position: absolute;
+            border: 10px solid darkcyan;
+            border-color: transparent fuchsia transparent transparent;
+            top: 50%;
+            margin-top: -10px;
+            left: -24px;
+        }
+
+        p::before {
+            content: attr(data-person);
+            background-color: #eee;
+            padding: 10px;
+            position: absolute;
+            left: -100px;
+            top: 50%;
+            margin-top: -20px;
+            width: 55px;
+        }
+    </style>
+</body>
+
+</html>

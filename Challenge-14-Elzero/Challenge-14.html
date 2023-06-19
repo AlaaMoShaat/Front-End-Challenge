@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge-14</title>
+</head>
+
+<body>
+    <h1>Alaa</h1>
+    <h2>Al-Mo</h2>
+    <div class="div-1"></div>
+    <div class="container">
+        <div class="box">
+            <div class="face front">front</div>
+            <div class="face back">back</div>
+        </div>
+    </div>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            perspective: 600px;
+            transform-style: preserve-3d;
+            backface-visibility: hidden;
+        }
+
+        :root {
+            --minColor: rgb(57, 149, 180);
+            --chColor: #ffffff;
+        }
+
+        h1 {
+            width: 150px;
+            height: 50px;
+            background-color: var(--minColor);
+            color: #ffffff;
+            margin: 50px auto;
+            margin-bottom: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            padding: 40px;
+            font-size: 40px;
+        }
+
+        h1::before {
+            content: "";
+            width: 150px;
+            height: 50px;
+            background-color: var(--minColor);
+            position: absolute;
+            z-index: -1;
+            transform: skew(-10deg, -10deg);
+            padding: 40px;
+        }
+
+        h1::after {
+            content: "";
+            width: 150px;
+            height: 50px;
+            background-color: var(--minColor);
+            position: absolute;
+            z-index: -1;
+            transform: skew(10deg, 10deg);
+            padding: 40px;
+        }
+
+
+        h2 {
+            font-family: Arial, Helvetica, sans-serif;
+            width: 150px;
+            height: 80px;
+            margin: 50px auto;
+            margin-bottom: 300px;
+            background-color: var(--minColor);
+            color: var(--chColor);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            padding-left: 20px;
+        }
+
+        h2::before {
+            content: "";
+            position: absolute;
+            width: 20px;
+            height: 80px;
+            background-color: var(--minColor);
+            transform: skewX(15deg);
+            left: -12px;
+        }
+
+        h2::after {
+            content: "";
+            position: absolute;
+            width: 6px;
+            height: 80px;
+            background-color: var(--chColor);
+            transform: skewX(15deg);
+            left: 6px;
+        }
+
+
+        .div-1 {
+            width: 200px;
+            height: 200px;
+            background-color: #607d8b;
+            display: flex;
+            justify-content: flex-start;
+            margin-top: 300px;
+            margin-left: 300px;
+            align-items: flex-end;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-bottom: 5px solid #000000;
+        }
+
+        .div-1::before {
+            content: "Al-Mo";
+            position: absolute;
+            left: 8px;
+            bottom: 2px;
+            color: #ffffff;
+        }
+
+        .div-1::after {
+            content: "";
+            width: 141.4px;
+            height: 141.4px;
+            background-color: #000000;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(45deg);
+            box-shadow: -4px -4px #ffffff inset;
+        }
+
+
+        .container {
+            margin: 40px auto;
+            width: 200px;
+            perspective: 600px;
+        }
+
+        .box {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            transform-style: preserve-3d;
+            transition: transform 1s;
+            transform-origin: bottom center;
+            -webkit-transition: transform 1s;
+            -moz-transition: transform 1s;
+            -ms-transition: transform 1s;
+            -o-transition: transform 1s;
+        }
+
+        .box:hover {
+            transform: translateY(-100%) rotateX(-180deg);
+            -webkit-transform: translateY(-100%) rotateX(-180deg);
+            -moz-transform: translateY(-100%) rotateX(-180deg);
+            -ms-transform: translateY(-100%) rotateX(-180deg);
+            -o-transform: translateY(-100%) rotateX(-180deg);
+        }
+
+        .box .face {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            font-size: 30px;
+            color: white;
+            backface-visibility: hidden;
+        }
+
+        .box .front {
+            background-color: red;
+        }
+
+        .box .back {
+            background-color: green;
+            transform: rotateX(180deg);
+            -webkit-transform: rotateX(180deg);
+            -moz-transform: rotateX(180deg);
+            -ms-transform: rotateX(180deg);
+            -o-transform: rotateX(180deg);
+        }
+    </style>
+</body>
+
+</html>

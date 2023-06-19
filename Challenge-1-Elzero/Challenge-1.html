@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge-1</title>
+</head>
+
+<body>
+    <div>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod, sed. Ea ipsum
+        similique quasi rem, fugiat voluptatibus reiciendis nam debitis earum quo veniam
+        laudantium mollitia atque! Laborum ea nam doloribus.
+        <span class="top-left">1</span>
+        <span class="bottom-left">2</span>
+        <span class="top-right">3</span>
+        <span class="bottom-right">4</span>
+    </div>
+    <style>
+        div {
+            width: 400px;
+            background-color: #eee;
+            margin: 20px auto;
+            padding: 10px;
+            border: 2px solid red;
+            border-color: red blue;
+            position: relative;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 30px;
+            text-align: center;
+        }
+
+        .top-left,
+        .bottom-left,
+        .top-right,
+        .bottom-right {
+            padding: 0 10px;
+            position: absolute;
+            background-color: darkcyan;
+            z-index: 1;
+        }
+
+        .top-right,
+        .bottom-right {
+            right: -16px;
+            border-left: 2px solid red;
+        }
+
+        .top-left,
+        .bottom-left {
+            left: -16px;
+            border-right: 2px solid red;
+        }
+
+        .bottom-left,
+        .bottom-right {
+            bottom: -12px;
+        }
+
+        .top-left,
+        .top-right {
+            top: -12px;
+        }
+    </style>
+</body>
+
+</html>

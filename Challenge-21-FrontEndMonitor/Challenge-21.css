@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+}
+
+h2,
+p,
+button {
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.main {
+    background-color: #674bb1;
+    height: 100vh;
+    padding: 2%;
+    background-image: url(../Challenge-21/huddle-landing-page-with-single-introductory-section-master/images/bg-desktop.svg);
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.logo>img,
+.footer img {
+    width: 1.6rem;
+    height: 1.6rem;
+}
+
+.logo>img {
+    width: 3rem;
+    height: 3rem;
+}
+
+.left-side .logo {
+    display: flex;
+    margin-bottom: 8%;
+    margin-top: 0%;
+    font-size: 1.1rem;
+    font-style: italic;
+}
+
+.left-side {
+    margin-right: 10%;
+    width: 100%;
+}
+
+.left-side>img {
+    max-width: 100%;
+}
+
+h1 {
+    margin-left: 1%;
+}
+
+.content {
+    margin-top: 15%;
+    width: 80%;
+    margin-bottom: 30%;
+}
+
+.content p {
+    margin-bottom: 10%;
+    color: rgba(255, 255, 255, 0.685);
+    font-size: 1.1rem;
+}
+
+h2 {
+    margin-top: 8%;
+    font-size: 2.1rem;
+    margin-bottom: 4%;
+
+}
+
+.right-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+}
+
+.content button {
+    padding: 12px 60px;
+    outline: none;
+    border: none;
+    border-radius: 30px;
+    transition-duration: 0.4s;
+    font-size: 1.1rem;
+    color: #674bb1;
+    box-shadow: 2px 4px 5px 1px #6f3f94;
+}
+
+.content button:hover {
+    color: white;
+    background-color: #e980e7;
+    cursor: pointer;
+}
+
+.footer {
+    width: 100%;
+}
+
+.footer a {
+    background-color: #e980e7;
+    border-radius: 5px;
+    text-decoration: none;
+    border: none;
+    padding: 5px;
+    transition-duration: 0.4s;
+    line-height: 50%;
+    margin-left: 5px;
+    display: inline-block;
+}
+
+.footer a:hover {
+    cursor: pointer;
+    background-color: #e980e757;
+    padding: 3px;
+}
+
+@media (max-width: 700px) {
+    .main {
+        height: initial;
+        background-image: url(../Challenge-21/huddle-landing-page-with-single-introductory-section-master/images/bg-mobile.svg);
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: initial;
+    }
+
+    .left-side {
+        margin-right: 0;
+    }
+
+    .right-side {
+        align-items: center;
+        max-width: 100%;
+    }
+
+    .left-side>img {
+        height: 80%;
+        width: 80%;
+    }
+
+    .content {
+        width: 100%;
+    }
+}

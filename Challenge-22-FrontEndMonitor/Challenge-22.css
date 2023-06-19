@@ -1,0 +1,246 @@
+* {
+    font-family: 'Jomhuria', cursive;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #511f50;
+}
+
+* {
+    box-sizing: border-box;
+    word-spacing: 0.2rem;
+    letter-spacing: 0.1rem;
+}
+
+.container {
+    background-image: url(../Challenge-22/social-proof-section-master/images/bg-pattern-top-desktop.svg),
+        url(../Challenge-22/social-proof-section-master/images/bg-pattern-bottom-desktop.svg);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding: 3rem;
+    background-color: #9c679b1c;
+}
+
+.top-side,
+.buttom-side {
+    display: flex;
+    height: 50%;
+    overflow: hidden;
+    justify-content: space-evenly;
+    padding: 1rem;
+}
+
+.top-side>div {
+    width: calc(91% / 2);
+}
+
+.top-side .top-right {
+    margin-top: 1.6rem;
+}
+
+.top-side .top-right>div {
+    padding: 0.9rem 1.4rem;
+    background-color: rgb(228, 225, 225);
+    margin-bottom: 0.8rem;
+    border-radius: 0.5rem;
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.top-side .top-right div {
+    word-spacing: initial;
+    letter-spacing: initial;
+}
+
+.top-side .top-right div b {
+    word-spacing: initial;
+    letter-spacing: initial;
+}
+
+.top-side .top-right .two {
+    margin-left: 3rem;
+}
+
+.top-side .top-right .three {
+    margin-left: 6rem;
+}
+
+.top-side .top-right div img {
+    margin-right: 1.2rem;
+}
+
+h1 {
+    font-family: fantasy;
+    margin-bottom: 1.6rem;
+    font-size: 2.5rem;
+    color: #f29548;
+}
+
+.buttom-side>div {
+    display: flex;
+    flex-direction: column;
+    background-color: #511f50;
+    border-radius: 0.5rem;
+    justify-content: space-evenly;
+    padding: 0rem 1.6rem;
+    height: 80%;
+    width: calc(80% /3);
+    overflow: hidden;
+}
+
+.buttom-side>div .inf {
+    display: inline-block;
+    padding: 1rem;
+}
+
+.prof img {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+}
+
+.prof {
+    display: flex;
+    align-items: center;
+}
+
+h3 {
+    color: white;
+    font-weight: bold;
+    font-size: medium;
+    margin-bottom: 0.2rem;
+}
+
+h4 {
+    color: #ba6fa1;
+    font-size: medium;
+}
+
+.content p {
+    color: white;
+    font-size: small;
+    font-weight: bold;
+
+}
+
+.top-left p {
+    font-weight: bold;
+    opacity: 0.7;
+}
+
+.stars i {
+    color: #f29548;
+}
+
+.buttom-side {
+    position: relative;
+}
+
+.buttom-side .one {
+    position: absolute;
+    transform: translate(-120%, 0);
+}
+
+.buttom-side .two {
+    position: absolute;
+    transform: translate(-5%, 7%);
+}
+
+.buttom-side .three {
+    position: absolute;
+    transform: translate(110%, 14%);
+}
+
+@media (max-width: 800px) {
+    h1 {
+        font-family: fantasy;
+        margin-bottom: 1.6rem;
+        font-size: 2.5rem;
+        color: #f29548;
+        width: 90%;
+    }
+
+    .container {
+        background-image: url(../Challenge-22/social-proof-section-master/images/bg-pattern-top-mobile.svg),
+            url(../Challenge-22/social-proof-section-master/images/bg-pattern-bottom-mobile.svg);
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        padding: 1rem;
+        background-color: #9c679b1c;
+        align-items: center;
+    }
+
+    .top-side {
+        display: flex;
+        flex-direction: column;
+        overflow: visible;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .top-side>div {
+        width: 90%;
+    }
+
+    .top-side .top-left,
+    .top-side .top-right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .top-side .top-right>div {
+        padding: 0.9rem 1.4rem;
+        background-color: rgb(228, 225, 225);
+        margin-bottom: 0.8rem;
+        border-radius: 0.5rem;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .top-side .top-right .two {
+        margin-left: 0;
+    }
+
+    .top-side .top-right .three {
+        margin-left: 0;
+    }
+
+    .buttom-side {
+        position: initial;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .buttom-side>div {
+        width: 90%;
+    }
+
+    .buttom-side>div {
+        display: flex;
+        flex-direction: column;
+        background-color: #511f50;
+        border-radius: 0.5rem;
+        justify-content: space-evenly;
+        padding: 0rem 1.6rem;
+        height: 15rem;
+        margin-bottom: 2rem;
+    }
+
+    .buttom-side .one,
+    .buttom-side .two,
+    .buttom-side .three {
+        position: initial;
+        transform: initial;
+    }
+}

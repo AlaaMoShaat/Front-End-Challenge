@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge-17</title>
+</head>
+
+<body>
+    <div class="p">
+        <div class="pro1">pro1
+            <p>this is pro1</p>
+        </div>
+        <div class="pro2">pro2
+            <p>this is pro2</p>
+        </div>
+        <div class="pro3">pro3
+            <p>this is pro3</p>
+        </div>
+        <div class="pro4">pro4
+            <p>this is pro4</p>
+        </div>
+    </div>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            box-sizing: border-box;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .p {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-content: space-between;
+            margin-top: 20px;
+        }
+
+        .p>div {
+            background-color: #eee;
+            text-align: center;
+            padding: 10px;
+            margin-bottom: 10px;
+            color: black;
+            width: calc(100%);
+        }
+
+        .p div p {
+            color: black;
+            font-size: initial;
+            font-weight: initial;
+            margin-top: 10px;
+        }
+
+        @media (min-width: 768px) {
+            .p>div {
+                color: red;
+            }
+
+            .p .pro1 {
+                width: calc(100% - 10px);
+            }
+
+            .p .pro2,
+            .p .pro3,
+            .p .pro4 {
+                width: calc((100% - 20px)/3);
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .p>div {
+                color: aqua;
+            }
+
+            .p .pro1,
+            .p .pro4 {
+                width: calc(100% - 10px);
+            }
+
+            .p .pro2,
+            .p .pro3 {
+                width: calc((100% - 15px)/2);
+            }
+        }
+    </style>
+</body>
+
+</html>

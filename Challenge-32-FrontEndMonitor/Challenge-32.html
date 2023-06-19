@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Main CSS File -->
+    <link rel="stylesheet" href="CSS/Challenge-32.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Jomhuria&family=Open+Sans:ital,wght@1,300&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>Challenge-32</title>
+</head>
+<body>
+    <div class="all">
+        <div class="sec-1">
+            <div class="head">
+                <div class="text">
+                    <h2>Social Media Dashboard</h2>
+                    <p>Total Followers: 23,004</p>
+                </div>
+                <div class="mode">
+                    <p>Light Mode</p>
+                    <input class="da-or-li dark" type="checkbox" id="dark"/>
+                    <label for="dark"></label>
+                </div>
+
+                <script>
+                    let ele = document.getElementById("dark");
+                    ele.onclick = function() {
+                        document.body.classList.toggle("dark_mode");
+                        if(document.body.classList.contains("dark_mode")) {
+                            document.querySelector(".mode p").textContent = "Dark Mode";
+                        }else{
+                            document.querySelector(".mode p").textContent = "Light Mode";
+                        }
+                        
+                    }
+                </script>
+
+            </div>
+            <div class="boxes">
+                <div class="box">
+                    <div>
+                        <div class="app">
+                            <img src="images/icon-facebook.svg" alt="" width="20px" height="20px">
+                            <span>@nathanf</span>
+                        </div>
+                        <span class="count">1987</span>
+                        <p class="followers">Followers</p>
+                        <span class="day up">12 Today</span>
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <div class="app">
+                            <img src="images/icon-twitter.svg" alt="" width="20px" height="20px">
+                            <span>@nathanf</span>
+                        </div>
+                        <span class="count">1044</span>
+                        <p class="followers">Followers</p>
+                        <span class="day up">99 Today</span>
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <div class="app">
+                            <img src="images/icon-instagram.svg" alt="" width="20px" height="20px">
+                            <span>@realnathanf</span>
+                        </div>
+                        <span class="count">11K</span>
+                        <p class="followers">Followers</p>
+                        <span class="day up">1099 Today</span>
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <div class="app">
+                            <img src="images/icon-youtube.svg" alt="" width="20px" height="20px">
+                            <span>Nathan F.</span>
+                        </div>
+                        <span class="count">8239</span>
+                        <p class="followers">Subscribers</p>
+                        <span class="day down">144 Today</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sec-2">
+            <div class="head">
+                <p>Overview - Today</p>
+            </div>
+            <div class="boxes">
+                <div class="box">
+                    <div>
+                        <div class="page-views">
+                            <p>Page Views</p>
+                            <span>87</span>
+                        </div>
+                        <div class="icon">
+                            <img src="images/icon-facebook.svg" alt="" width="20px" height="20px">
+                            <span class="up">3%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <div class="page-views">
+                            <p>Likes</p>
+                            <span>52</span>
+                        </div>
+                        <div class="icon">
+                            <img src="images/icon-facebook.svg" alt="" width="20px" height="20px">
+                            <span class="down">2%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <div class="page-views">
+                            <p>Likes</p>
+                            <span>5462</span>
+                        </div>
+                        <div class="icon">
+                            <img src="images/icon-instagram.svg" alt="" width="20px" height="20px">
+                            <span class="up">2257%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <div class="page-views">
+                            <p>Profile Views</p>
+                            <span>52K</span>
+                        </div>
+                        <div class="icon">
+                            <img src="images/icon-instagram.svg" alt="" width="20px" height="20px">
+                            <span class="up">1375%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <div class="page-views">
+                            <p>Retweets</p>
+                            <span>117</span>
+                        </div>
+                        <div class="icon">
+                            <img src="images/icon-twitter.svg" alt="" width="20px" height="20px">
+                            <span class="up">303%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <div class="page-views">
+                            <p>Likes</p>
+                            <span>507</span>
+                        </div>
+                        <div class="icon">
+                            <img src="images/icon-twitter.svg" alt="" width="20px" height="20px">
+                            <span class="up">553%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <div class="page-views">
+                            <p>Likes</p>
+                            <span>107</span>
+                        </div>
+                        <div class="icon">
+                            <img src="images/icon-youtube.svg" alt="" width="20px" height="20px">
+                            <span class="down">19%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <div class="page-views">
+                            <p>Total Views</p>
+                            <span>1407</span>
+                        </div>
+                        <div class="icon">
+                            <img src="images/icon-youtube.svg" alt="" width="20px" height="20px">
+                            <span class="down">12%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

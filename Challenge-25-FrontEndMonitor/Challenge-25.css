@@ -1,0 +1,377 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.contener {
+    margin: auto;
+}
+
+.contener header {
+    background-image: url(../Challenge-25/clipboard-landing-page-master/images/bg-header-desktop.png);
+    background-size: cover;
+    height: 360px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+h1 {
+    color: #4e545b;
+}
+
+.hrader-content {
+    width: 40%;
+    margin-top: 10%;
+    text-align: center;
+}
+
+.head p {
+    color: #a1a1a1d2;
+    line-height: 25px;
+    font-size: 15px;
+}
+
+.side p,
+.sec.cont-3 p {
+    color: #a1a1a1d2;
+    line-height: 20px;
+    font-size: 14px;
+}
+
+h1 img {
+    display: block;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+section .choice-butt,
+.sec.cont-4 {
+    margin: 2% auto 7%;
+    width: 35%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.choice-butt button,
+section .content-4 button {
+    padding: 15px 45px;
+    border-radius: 30px;
+    border: none;
+    font-size: 16px;
+    color: white;
+    box-shadow: 0 4px 3px 1px #dce5f0;
+}
+
+.ios-butt {
+    background-color: #26bba4;
+    transition-duration: 0.4s;
+}
+
+.mac-butt {
+    background-color: #6174ff;
+    transition-duration: 0.4s;
+}
+
+.ios-butt:hover,
+.mac-butt:hover {
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+button:focus-within {
+    background-color: darkgray;
+}
+
+.contener section {
+    display: flex;
+    flex-direction: column;
+    padding: 0 2%;
+}
+
+section>p {
+    width: 40%;
+    color: #a1a1a1;
+    line-height: 25px;
+    font-size: 15px;
+    text-align: center;
+    margin: 0 auto 1%;
+}
+
+.head.cont-1,
+.head.cont-2,
+.head.cont-3,
+section .content-4 {
+    width: 40%;
+    margin: 1% auto 5%;
+    text-align: center;
+}
+
+section .content-1,
+section .content-2,
+section .content-3,
+section .content-4 {
+    display: flex;
+    flex-direction: column;
+}
+
+.content-1 .sec.cont-1 {
+    width: 100%;
+    display: flex;
+}
+
+.side.cont-1 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 8%;
+    margin-top: 5%;
+    width: 300px;
+}
+
+.side.cont-1>div {
+    margin-bottom: 20%;
+}
+
+h2 {
+    margin-bottom: 3%;
+    color: #4e545b;
+}
+
+h3 {
+    margin-bottom: 2.5%;
+    color: #4e545b;
+}
+
+section .content-2,
+section .content-3,
+section .content-4 {
+    margin-top: 10%;
+    align-items: center;
+    text-align: center;
+}
+
+section .content-3 {
+    margin-top: 2%;
+}
+
+.sec.cont-3 {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 12%;
+}
+
+.sec.cont-3 div {
+    width: calc(90% / 3);
+}
+
+.sec.cont-3 img {
+    height: 20%;
+}
+
+.sec.cont-3 h3 {
+    margin-top: 10%;
+}
+
+.Companies-logo {
+    display: flex;
+    justify-content: space-evenly;
+    height: 20%;
+    margin-bottom: 2%;
+}
+
+.Companies-logo img {
+    width: calc(45% / 5);
+}
+
+.sec.cont-4 {
+    width: 87.5%;
+    margin-top: 8%;
+}
+
+footer {
+    padding: 3% 2%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #f5f6f8;
+}
+
+footer .logo,
+footer .app-icons {
+    width: 20%;
+}
+
+footer .links {
+    width: 60%;
+}
+
+footer .links ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+footer .links ul li a {
+    text-decoration: none;
+    color: #a1a1a1;
+    font-size: 15px;
+    transition-duration: 0.4s;
+}
+
+footer .links ul li a:hover {
+    text-decoration: underline;
+}
+
+.logo img {
+    width: 20%;
+    margin-left: 30%;
+}
+
+.app-icons {
+    margin-left: 10%;
+}
+
+.app-icons img {
+    margin-left: 10%;
+    width: 25px;
+    transition-duration: 0.4s;
+}
+
+.app-icons img:hover {
+    cursor: pointer;
+}
+
+@media (max-width:800px) {
+    .contener header {
+        background-image: url(../Challenge-25/clipboard-landing-page-master/images/bg-header-mobile.png);
+        height: 600px;
+    }
+
+    .hrader-content {
+        width: 90%;
+        margin-top: 20%;
+    }
+
+    section>p {
+        width: 90%;
+        margin: 0 auto 1%;
+    }
+
+    section .choice-butt,
+    .sec.cont-4 {
+        margin: 12% auto 30%;
+        width: 70%;
+        flex-direction: column;
+
+    }
+
+    .choice-butt button,
+    section .content-4 button {
+        margin-bottom: 8%;
+    }
+
+    .head.cont-1,
+    .head.cont-2,
+    .head.cont-3,
+    section .content-4 {
+        width: 90%;
+        margin: 1% auto 20%;
+    }
+
+    .content-1 .sec.cont-1 {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .content-1 .sec.cont-1 img {
+        width: 90%;
+    }
+
+    .side.cont-1 {
+        margin-top: 12%;
+        width: 90%;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    section .content-2 {
+        margin: 20% 0 20%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .head.cont-2 {
+        margin: 1% auto 15%;
+    }
+
+    section .content-2 img {
+        width: 90%;
+    }
+
+    .sec.cont-3 {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .sec.cont-3 div {
+        width: 90%;
+        margin-bottom: 15%;
+    }
+
+    .sec.cont-3 h3 {
+        margin-top: 6%;
+    }
+
+    .Companies-logo {
+        flex-direction: column;
+        margin-bottom: 25%;
+        align-items: center;
+    }
+
+    .Companies-logo img {
+        width: 40%;
+        margin-bottom: 20%;
+    }
+
+    footer {
+        flex-direction: column;
+        padding: 15% 0;
+        text-align: center;
+    }
+
+    .logo img {
+        width: 80%;
+        margin: 0;
+        margin-bottom: 60%;
+    }
+
+    footer .links {
+        width: 90%;
+    }
+
+    footer .links ul {
+        flex-direction: column;
+    }
+
+    footer .links ul li {
+        margin-bottom: 5%;
+    }
+
+    footer .app-icons {
+        margin: 0;
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 8%;
+        width: 90%;
+    }
+
+    footer .app-icons img {
+        margin-left: 2%;
+    }
+}

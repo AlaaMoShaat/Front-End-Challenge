@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge-15</title>
+</head>
+
+<body>
+    <div class="div-1"></div>
+    <div class="grid">
+        <div class="grid-E">
+            <div class="E-left"></div>
+            <div class="E-top"></div>
+            <div class="E-mid"></div>
+            <div class="E-bottom"></div>
+        </div>
+        <div class="grid-L">
+            <div class="L-left"></div>
+            <div class="L-bottom"></div>
+        </div>
+    </div>
+    <style>
+        .div-1 {
+            width: 200px;
+            height: 200px;
+            border: 10px solid black;
+            border-bottom-color: transparent;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-top: -100px;
+            margin-left: -500px;
+            animation-name: alaa;
+            animation-duration: 3s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        .div-1::before {
+            content: "";
+            width: 75%;
+            height: 75%;
+            border: 10px solid yellow;
+            border-bottom-color: transparent;
+            border-radius: 50%;
+            position: absolute;
+            animation-duration: 2s;
+            animation-name: alaa;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        .div-1::after {
+            content: "";
+            width: 48%;
+            height: 48%;
+            border: 10px solid rgb(35, 35, 82);
+            border-bottom-color: transparent;
+            border-radius: 50%;
+            position: absolute;
+            animation-duration: 1s;
+            animation-name: alaa;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        .div-1:hover,
+        .div-1:hover::before,
+        .div-1:hover::after {
+            animation-play-state: paused;
+        }
+
+        @keyframes alaa {
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        :root {
+            --bac-color: rgba(24, 23, 23, 0.822);
+            --box-color: rgb(217, 255, 0);
+        }
+
+        .grid {
+            background-color: #eee;
+            width: 500px;
+            height: 400px;
+            padding: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-top: -250px;
+            margin-left: -200px;
+            display: flex;
+            align-items: center;
+        }
+
+        .grid-E {
+            height: calc(100% - 20px);
+            width: 45%;
+            margin-right: 40px;
+            display: grid;
+            grid-template-rows: repeat(7, 1fr);
+            grid-template-columns: repeat(4, 1fr);
+            position: relative;
+        }
+
+        .grid-L {
+            height: calc(100% - 20px);
+            width: 45%;
+            display: grid;
+            grid-template-rows: repeat(7, 1fr);
+            grid-template-columns: repeat(4, 1fr);
+            position: relative;
+        }
+
+        .grid-E .E-left,
+        .grid-L .L-left {
+            background-color: var(--bac-color);
+            grid-area: 1/1/8/2;
+        }
+
+        .grid-E .E-top {
+            background-color: var(--bac-color);
+            grid-area: 1/2/2/5;
+        }
+
+        .grid-E .E-mid {
+            background-color: var(--bac-color);
+            grid-area: 4/2/5/5;
+        }
+
+        .grid-E .E-bottom,
+        .grid-L .L-bottom {
+            background-color: var(--bac-color);
+            grid-area: 7/2/8/5;
+        }
+
+        .grid-E::before {
+            content: "";
+            width: 30px;
+            height: 30px;
+            background-color: var(--box-color);
+            position: absolute;
+            right: 10px;
+            top: 9.28px;
+
+        }
+
+        .grid-L::before {
+            content: "";
+            width: 30px;
+            height: 30px;
+            background-color: var(--box-color);
+            position: absolute;
+            top: 337.44px;
+            left: 183px;
+            animation: L 5s linear infinite;
+        }
+
+        @keyframes L {
+            0% {
+                opacity: 1;
+                top: 337.44px;
+                left: 183px;
+            }
+
+            20% {
+                opacity: 1;
+                top: 337.44px;
+                left: 10.875px;
+            }
+
+            50% {
+                opacity: 1;
+                left: 10.875px;
+                top: 9.28px;
+            }
+
+            80% {
+                opacity: 0;
+                left: 10.875px;
+                top: 9.28px;
+            }
+
+            100% {
+                opacity: 0;
+                left: 10.875px;
+                top: 9.28px;
+            }
+        }
+    </style>
+</body>
+
+</html>

@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    margin: 0;
+    color: white;
+}
+
+:root {
+    --slide-1-bac-color: #e28525;
+    --slide-2-bac-color: #016972;
+    --slide-3-bac-color: #00403f;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    background-color: #f2f2f2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main .face {
+    display: flex;
+    width: 70%;
+    height: 70%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.main .face .slide-1 {
+    background-color: var(--slide-1-bac-color);
+}
+
+.main .face .slide-2 {
+    background-color: var(--slide-2-bac-color);
+    border-left: 1px solid #024e55;
+}
+
+.main .face .slide-3 {
+    background-color: var(--slide-3-bac-color);
+    border-left: 1px solid #013130;
+}
+
+[class*=slide] {
+    padding: 30px;
+}
+
+[class*=slide] img {
+    margin-bottom: 25px;
+}
+
+[class*=slide] h3 {
+    margin-bottom: 25px;
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+[class*=slide] p {
+    font-size: 15px;
+    display: block;
+    height: 50%;
+    margin-bottom: 10px;
+}
+
+[class*=slide] button {
+    padding: 10px 20px;
+    outline: none;
+    border: 1px solid white;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.918);
+    color: rgb(182, 26, 26);
+    margin-bottom: 30px;
+    transition-duration: 0.4s;
+}
+
+[class*=slide] button:hover {
+    background-color: transparent;
+    color: white;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+[class*=slide] button:active {
+    font-weight: bold;
+}
+
+@media (max-width: 800px) {
+    .main {
+        padding: 20px 0px;
+        height: initial;
+    }
+
+    .main .face {
+        display: block;
+        width: 90%;
+    }
+
+    [class*=slide] {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    [class*=slide] button {
+        margin-top: 30px;
+    }
+
+    .main .face .slide-3 {
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+    .main .face .slide-1 {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+}

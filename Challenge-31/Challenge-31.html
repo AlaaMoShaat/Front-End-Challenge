@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Startup</title>
+    <!-- Main CSS File -->
+    <link rel="stylesheet" href="CSS/Challenge-31.css">
+    <!-- Render All Elements Normally -->
+    <link rel="stylesheet" href="CSS/normalize.css">
+</head>
+
+<body>
+    <div class="all">
+        <div class="mode">
+            <p>Light Mode</p>
+            <input type="checkbox" id="dark"/>
+            <label for="dark"></label>
+        </div>
+        <script>
+            let ele = document.getElementById("dark");
+            ele.onclick = function() {
+                document.body.classList.toggle("dark-mode");
+                document.body.classList.contains("dark-mode")? 
+                document.querySelector(".all .mode p").textContent = "Dark Mode":
+                document.querySelector(".mode p").textContent = "Light Mode"  
+            }
+            
+        </script>
+        <!-- Start Header -->
+        <header class="container">
+            <a href="avascript:void(0)" class="logo">
+                <img src="icons/logo.svg" alt="" width="33px" height="33px">
+                <h1 class="title">Start<span>up</span></h1>
+            </a>
+            <button class="h-arrow"><span></span></button>
+            <ul class="links">
+                <li><a id="home" class="active" href="javascript:void(0)">Home</a></li>
+                <li><a class="more" href="avascript:void(0)">Solutions</a></li>
+                <li><a class="more" href="avascript:void(0)">Services</a></li>
+                <li><a href="avascript:void(0)">About</a></li>
+                <li><a href="#contact-us">Feedback</a></li>
+            </ul>
+            <div class="header-butt">
+                <a href="avascript:void(0)">Download App</a>
+                <a href="avascript:void(0)">Let's Discuss</a>
+            </div>
+        </header>
+        <!-- End Header -->
+
+        <!-- Start Landing -->
+        <div class="landing container balls">
+            <div class="side balls">
+                <div>
+                    <h2 class="title">The <span>template</span> your <br> startup needed</h2>
+                    <p>A startup or start-up is a company or project undertaken by an entrepreneur to seek,
+                        develop, and validate a scalable business model.</p>
+                    <div class="butt">
+                        <a class="solid-butt" href="avascript:void(0)">Let's discuss</a>
+                        <a class="vacuum-butt" href="avascript:void(0)">Learn more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="side">
+                <div>
+                    <span class="balls"></span>
+                    <img src="imges/Saly-1.svg" alt="">
+                </div>
+            </div>
+            <a href="#features" class="h-arrow"><span></span></a>
+        </div>
+        <!-- End Landing -->
+
+        <!-- Start Features -->
+        <div class="features container balls bac-shadow" id="features">
+            <div class="head">
+                <a class="head-butt" href="">features</a>
+                <h2 class="title">Your Dream <span>Template</span></h2>
+            </div>
+            <div class="boxes">
+                <div class="box">
+                    <div>
+                        <div class="img"><img src="imges/Saly-27.svg" alt="" width="200px" height="200px"></div>
+                        <div class="text">
+                            <h4>Product Design</h4>
+                            <p>Startups typically begin by a founder (solo-founder) or co-founders who</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <div class="img"><img src="imges/Saly-10.svg" alt="" width="200px" height="200px"></div>
+                        <div class="text">
+                            <h4>Product Design</h4>
+                            <p>Startups typically begin by a founder (solo-founder) or co-founders who</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                       <div class="img"> <img src="imges/Saly-13.svg" alt="" width="200px" height="200px"></div>
+                        <div class="text">
+                            <h4>Product Design</h4>
+                            <p>Startups typically begin by a founder (solo-founder) or co-founders who</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <div class="img"><img src="imges/Saly-43.svg" alt="" width="200px" height="200px"></div>
+                        <div class="text">
+                            <h4>Product Design</h4>
+                            <p>Startups typically begin by a founder (solo-founder) or co-founders who</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Features -->
+
+        <!-- Start Design To Code -->
+        <div class="des-to-code container balls">
+            <div class="text">
+                <div>
+                    <h2 class="title">From <span>design</span> to <br> code and back.</h2>
+                    <p>Startups typically begin by a founder (solo-founder) or co-founders who have a way
+                    to solve a problem. The founder of a startup will begin market validation by problem
+                    interview, solution interview, and building a minimum viable product (MVP), i.e. a prototype,
+                    to develop and validate their business models</p>
+                    <a class="solid-butt" href="avascript:void(0)">Let's discuss</a>
+                </div>
+            </div>
+            <div class="img balls">
+               <div>
+                    <img src="imges/Mask Group 3.png" alt="" width="200px" height="200px">
+               </div>
+            </div>
+        </div>
+        <!-- Start Design To Code -->
+
+        <!-- Start Testimonials -->
+        <div class="testimonials container balls bac-shadow">
+            <div class="head">
+                <a class="head-butt" href="">testimonials</a>
+                <h2 class="title">
+                    <span>Trusted</span> by 100's of <br> clients
+                    <span>
+                        <span><img src="imges/Group 3.png" alt="" width="38px" height="38px"></span>
+                        <span><img src="imges/Group 7.png" alt="" width="38px" height="38px"></span>
+                        <span><img src="imges/Group 1.png" alt="" width="38px" height="38px"></span>
+                    </span>
+                </h2>
+            </div>
+            <div class="boxes">
+                <div class="box">
+                    <div class="bac-shadow">
+                        <h4>Super Helpful !!!!</h4>
+                        <p>There’s no other program that walks you through exactly what 
+                            you need to know to start an online store fast,
+                             written by someone who has built several 7-figure ecommerce businesses from scratch. </p>
+                        <div class="info">
+                            <div class="img">
+                                <img src="imges/Group 3.png" alt="" width="48px" height="48px">
+                            </div>
+                            <div class="text">
+                                <h3>Anna Gates</h3>
+                                <p>Web Designer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="bac-shadow">
+                        <h4>Awesome !!!!</h4>
+                        <p>There’s no other program that walks you through exactly what 
+                            you need to know to start an online store fast,
+                             written by someone who has built several 7-figure ecommerce businesses from scratch. </p>
+                        <div class="info">
+                            <div class="img">
+                                <img src="imges/Group 4.png" alt="" width="48px" height="48px">
+                            </div>
+                            <div class="text">
+                                <h3>Anna Gates</h3>
+                                <p>Web Designer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="bac-shadow">
+                        <h4>Great Support !!!!</h4>
+                        <p>There’s no other program that walks you through exactly what 
+                            you need to know to start an online store fast,
+                             written by someone who has built several 7-figure ecommerce businesses from scratch. </p>
+                        <div class="info">
+                            <div class="img">
+                                <img src="imges/Group 6.png" alt="" width="48px" height="48px">
+                            </div>
+                            <div class="text">
+                                <h3>Anna Gates</h3>
+                                <p>Web Designer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="buut">
+                <button class="h-arrow"><span></span></button>
+                <button class="h-arrow"><span></span></button>
+            </div>
+        </div>
+        <!-- End Testimonials -->
+
+        <!-- Start Blog -->
+        <div class="blog container balls">
+            <div class="head">
+                <a class="head-butt" href="">Blog</a>
+                <h2 class="title"><span>Knowledge</span> Hub</h2>
+            </div>
+            <div class="boxes">
+                <div class="box">
+                    <div class="bac-shadow">
+                        <div class="img">
+                            <span>Business</span>
+                            <img src="imges/1.png" alt="" width="271px" height="165px"> 
+                        </div>
+                        <div class="text">
+                            <h4>How A Website Growths your Business</h4>
+                            <div class="info">
+                                <span>7 min read · September 12</span>
+                                <button class="h-arrow"><span></span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="bac-shadow">
+                        <div class="img">
+                            <span>Branding</span>
+                            <img src="imges/2.png" alt="" width="271px" height="165px">
+                        </div>
+                        <div class="text">
+                            <h4>How A Website Growths your Business</h4>
+                            <div class="info">
+                                <span>7 min read · September 12</span>
+                                <button class="h-arrow"><span></span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="bac-shadow">
+                        <div class="img">
+                            <span>Product Design</span>
+                            <img src="imges/3.png" alt="" width="271px" height="165px">
+                        </div>
+                        <div class="text">
+                            <h4>How A Website Growths your Business</h4>
+                            <div class="info">
+                                <span>7 min read · September 12</span>
+                                <button class="h-arrow"><span></span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="vacuum-butt" href="javascript:void(0)">View more</a>
+        </div>
+        <!-- End Blog -->
+
+        <!-- Start Rocket -->
+        <div class="rocket container balls bac-shadow">
+            <div class="img">
+                <img src="imges/Saly-43.svg" alt="" width="572px" height="572px">
+            </div>
+            <div class="text balls">
+                <h2 class="title">Fire up your <span>Rocket!</span></h2>
+                <p>Startups typically begin by a founder (solo-founder) or co-founders</p>
+                <a class="solid-butt" href="javascript:void(0)">Let's discuss</a>
+            </div>
+        </div>
+        <!-- End Rocket -->
+
+        <!-- Start Contact Us -->
+        <div class="contact-us container balls" id="contact-us">
+            <div class="content">
+                <div class="side">
+                    <a class="head-butt" href="javascript:void(0)">Contact Us</a>
+                    <a href="javascript:void(0)">
+                        Hello@Startup.com <button class="h-arrow"><span></span></button>
+                    </a>
+                    <div class="s-icons">
+                        <p>Social Media</p>
+                        <a href="javascript:void(0)"><img src="icons/Icon awesome-facebook-f.svg" alt="" width="14px" height="14px"></a>
+                        <a href="javascript:void(0)"><img src="icons/Icon awesome-twitter.svg" alt="" width="14px" height="14px"></a>
+                        <a href="javascript:void(0)"><img src="icons/Icon feather-instagram.svg" alt="" width="14px" height="14px"></a>
+                    </div>
+                </div>
+                <div class="side">
+                    <h3>Quick Links</h3>
+                    <div class="links">
+                        <ul>
+                            <ul>
+                                <li><a href="#home">Home</a></li>
+                                <li><a href="javascript:void(0)">Journey</a></li>
+                                <li><a href="javascript:void(0)">Technology</a></li>
+                                <li><a href="javascript:void(0)">Team</a></li>
+                            </ul>
+                        </ul>
+                        <ul>
+                            <ul>
+                                <li><a href="javascript:void(0)">Vision</a></li>
+                                <li><a href="javascript:void(0)">Thinking</a></li>
+                                <li><a href="javascript:void(0)">Join us</a></li>
+                                <li><a href="javascript:void(0)">Connect</a></li>
+                            </ul>
+                        </ul>
+                        <ul>
+                            <ul>
+                                <li><a href="javascript:void(0)">Privacy</a></li>
+                                <li><a href="javascript:void(0)">Google</a></li>
+                                <li><a href="javascript:void(0)">Alphabet</a></li>
+                            </ul>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <span>Copyright 2022 Xtratheme. All rights reserved.</span>
+            </div>
+        </div>
+        <!-- End Contact Us -->
+    </div>
+</body>
+
+</html>

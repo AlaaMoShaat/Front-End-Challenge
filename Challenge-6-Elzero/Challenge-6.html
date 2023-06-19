@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge-6</title>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="one">
+            <h3 class="one-1">Basic</h3>
+            <p class="one-2">Free</p>
+        </div>
+        <div class="two">
+            <h3 class="two-1">Pro</h3>
+            <p class="two-2">&#36;30</p>
+        </div>
+        <p class="clear"></p>
+        <div class="last">or</div>
+        <hr>
+    </div>
+    <style>
+        .parent {
+            width: 550px;
+            height: 300px;
+            text-align: center;
+            margin: 20px auto;
+            position: relative;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .one,
+        .two {
+            width: 223px;
+            height: 300px;
+            background-color: #eeeeee;
+            box-sizing: border-box;
+            display: inline-block;
+            margin: 0px 23px;
+            border-radius: 7px;
+        }
+
+        .one-1,
+        .two-1 {
+            width: 180px;
+            height: 40px;
+            background-color: #03a9f4;
+            text-align: center;
+            line-height: 40px;
+            position: absolute;
+            border-radius: 6px;
+            color: #ffffff;
+        }
+
+        .one-1 {
+            left: 48px;
+        }
+
+        .two-1 {
+            right: 47px;
+        }
+
+        .one-2,
+        .two-2 {
+            background-color: #dddddd;
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            position: absolute;
+            bottom: 0;
+            line-height: 180px;
+            font-size: 30px;
+        }
+
+        .one-2 {
+            left: 48px;
+        }
+
+        .two-2 {
+            right: 47px;
+        }
+
+        .last {
+            position: absolute;
+            top: 128px;
+            left: 260px;
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            line-height: 30px;
+            font-size: 20px;
+            border-radius: 50%;
+            background-color: #03A9F4;
+            color: white;
+            z-index: 5;
+        }
+
+        hr {
+            display: inline-block;
+            height: 300px;
+            position: absolute;
+            bottom: -10px;
+            background-color: #03a9f4;
+            left: 274px;
+        }
+    </style>
+</body>
+
+</html>
